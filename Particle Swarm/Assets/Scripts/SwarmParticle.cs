@@ -27,8 +27,10 @@ public class SwarmParticle : MonoBehaviour
             bestPosition = transform.position;
         }
 
-        velocity.x += (0.25f * Random.Range(0f, 1f) * (globalBest.x - transform.position.x)) + (0.25f * Random.Range(0f, 1f) * (bestPosition.x - transform.position.x));
-        velocity.y += (0.25f * Random.Range(0f, 1f) * (globalBest.y - transform.position.y)) + (0.25f * Random.Range(0f, 1f) * (bestPosition.y - transform.position.y));
+        velocity.x += (0.25f * Random.Range(0f, 1f) * (globalBest.x - transform.position.x)) 
+            + (0.25f * Random.Range(0f, 1f) * (bestPosition.x - transform.position.x));
+        velocity.y += (0.25f * Random.Range(0f, 1f) * (globalBest.y - transform.position.y)) 
+            + (0.25f * Random.Range(0f, 1f) * (bestPosition.y - transform.position.y));
 
     }
 
